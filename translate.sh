@@ -31,7 +31,7 @@ set_trans() {
     IFS=';'
     set -- $input
     trans=$(
-      curl -s https://api.deepl.com/v2/translate \
+      curl -s https://api-free.deepl.com/v2/translate \
         -d auth_key="$deepl_api_key" \
         -d "text=$1" \
         -d "text=$2" \
